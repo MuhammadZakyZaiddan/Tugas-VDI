@@ -1,4 +1,4 @@
-Heatmap
+Heatmap Faktor Korelasi Diabetes
 
 Data yang digunakan dalam Visualisasi:
 [diabetes_null.csv](https://github.com/user-attachments/files/17179713/diabetes_null.csv)
@@ -35,9 +35,16 @@ sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Heatmap Korelasi')  
 plt.show()  
 
-Sehingga menghasilkan Heatmap sebagai berikut
+Sehingga menghasilkan Heatmap sebagai berikut:
+![Screenshot 2024-09-29 223222](https://github.com/user-attachments/assets/8c8b0fab-b1bf-4fdf-856b-0adad7cba320)
 
+Cara membaca Heatmap ini:
+warna: heatmap akan mengikuti skala dari merah ke biru (negatif) dan (positif dengan nuansa lebih terang mendekati 0
+kuantifikasi: setiap sel akan menujukkan nilai korelasi antara dua variabel. jika nilai mendekati 1 maka terdapat korelasi positif yang kuat, artinya ketika suatu variabel meningkat, maka yang lain akan juga cenderung meningkat. Begitu pula sebaliknya untuk yang mendekati -1. Jika mendekati 0 maka akan menunjukkan lemahnya hubungan linier yang kuat antara dua variabel.
+Titik Penting: fokuslah pada sel yang mendekati 1 atau -1. Dikarenakan hubungan antara dua variabel ini signifikan.
 
+Contoh dari heatmap ini:
+BMI vs Outcome: kedua variabel ini menujukkan korelasi positif yang signifikan artinya BMI yang meningkat itu berpengaruh signifikan terhadap meningkatnya resiko diabetes.
 
-
-
+Contoh Insight yang dapat diambil:
+hubungan variabel glucose dan outcome menunjukkan bahwa glukosa adalah indikator penting untuk gejala diabetes.
