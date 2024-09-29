@@ -1,6 +1,4 @@
-#Heatmap Faktor Korelasi Diabetes
-
-Jika file atau gambar masih berbentuk link maka saya sarankan untuk mengakses link tersebut secara manual.
+# Heatmap Faktor Korelasi Diabetes
 
 Data yang digunakan dalam Visualisasi:
 [diabetes_null.csv](https://github.com/user-attachments/files/17179713/diabetes_null.csv)
